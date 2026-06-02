@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Linkedin, Github, Twitter, Dribbble } from "lucide-react";
+import { Linkedin, Github } from "lucide-react";
 import portraitImg from "@/assets/portrait.png";
 
 export default function Hero() {
@@ -11,8 +11,6 @@ export default function Hero() {
         {[
           { icon: Linkedin, href: "#", label: "LinkedIn" },
           { icon: Github, href: "#", label: "GitHub" },
-          { icon: Twitter, href: "#", label: "Twitter" },
-          { icon: Dribbble, href: "#", label: "Dribbble" },
         ].map((social, i) => (
           <motion.a
             key={social.label}

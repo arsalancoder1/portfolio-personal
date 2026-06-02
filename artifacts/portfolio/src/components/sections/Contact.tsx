@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Mail, Phone, MapPin, Send, Linkedin, Github, Twitter, Dribbble } from "lucide-react";
+import { Mail, Phone, Send, Linkedin, Github } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const formSchema = z.object({
@@ -78,22 +78,13 @@ export default function Contact() {
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                    <MapPin size={20} />
-                  </div>
-                  <div>
-                    <p className="text-sm text-white/50 mb-1 uppercase tracking-wider">Location</p>
-                    <p className="text-white font-medium">San Francisco, CA</p>
-                  </div>
-                </div>
               </div>
             </div>
 
             <div className="mt-12 pt-8 border-t border-white/10">
               <p className="text-sm text-white/50 mb-4 uppercase tracking-wider">Follow Me</p>
               <div className="flex gap-4">
-                {[Linkedin, Github, Twitter, Dribbble].map((Icon, i) => (
+                {[Linkedin, Github].map((Icon, i) => (
                   <a key={i} href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/70 hover:text-primary hover:bg-primary/10 hover:neon-glow transition-all">
                     <Icon size={18} />
                   </a>
