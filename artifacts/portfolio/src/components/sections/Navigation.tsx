@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Github } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export default function Navigation() {
@@ -29,7 +30,7 @@ export default function Navigation() {
         <a href="#hero" className="text-xl font-bold tracking-tight text-white hover:text-primary transition-colors" data-testid="link-home">
           Arsalan Zubairi.
         </a>
-        
+
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
@@ -42,6 +43,17 @@ export default function Navigation() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
+
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="link-github"
+            className="flex items-center gap-2 bg-white/10 hover:bg-white/15 border border-white/20 hover:border-primary/60 text-white text-sm font-medium px-4 py-2 rounded-full transition-all hover:shadow-[0_0_12px_rgba(124,58,237,0.4)]"
+          >
+            <Github size={16} />
+            View GitHub
+          </a>
         </div>
       </div>
     </nav>

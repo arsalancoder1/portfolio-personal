@@ -1,32 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Linkedin, Github } from "lucide-react";
 import portraitImg from "@/assets/portrait.png";
 
 export default function Hero() {
   return (
     <section id="hero" className="h-screen relative flex items-center justify-center pt-20 overflow-hidden">
-      {/* Social Icons - Left Edge */}
-      <div className="hidden md:flex flex-col gap-6 absolute left-8 top-1/2 -translate-y-1/2 z-20">
-        {[
-          { icon: Linkedin, href: "#", label: "LinkedIn" },
-          { icon: Github, href: "#", label: "GitHub" },
-        ].map((social, i) => (
-          <motion.a
-            key={social.label}
-            href={social.href}
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.5 + i * 0.1 }}
-            className="text-white/50 hover:text-primary transition-all hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(124,58,237,0.8)]"
-            data-testid={`link-social-${social.label.toLowerCase()}`}
-            aria-label={social.label}
-          >
-            <social.icon size={22} />
-          </motion.a>
-        ))}
-      </div>
-
       <div className="max-w-7xl mx-auto w-full px-6 grid grid-cols-1 md:grid-cols-3 gap-8 items-center relative z-10">
         {/* Left Text */}
         <motion.div 
