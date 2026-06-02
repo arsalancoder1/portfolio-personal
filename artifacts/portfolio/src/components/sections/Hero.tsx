@@ -5,7 +5,7 @@ import portraitImg from "@/assets/portrait.png";
 
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen relative flex items-center justify-center pt-20 overflow-hidden">
+    <section id="hero" className="h-screen relative flex items-center justify-center pt-20 overflow-hidden">
       {/* Social Icons - Left Edge */}
       <div className="hidden md:flex flex-col gap-6 absolute left-8 top-1/2 -translate-y-1/2 z-20">
         {[

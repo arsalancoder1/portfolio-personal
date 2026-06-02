@@ -25,7 +25,7 @@ export default function About() {
           className="glass-card p-8 md:p-12 max-w-3xl"
         >
           <p className="text-lg text-white/80 leading-relaxed font-light">
-            I'm Arsalan Zubairi, a passionate front-end developer with expertise in crafting beautiful, responsive web applications. I specialize in turning complex design ideas into pixel-perfect, performant code. My approach combines technical precision with creative sensibility to deliver exceptional digital experiences.
+            I'm Arsalan Zubairi, a passionate Front-End Developer skilled in HTML, CSS, JavaScript. I enjoy crafting visually appealing and functional websites that provide seamless user experiences. Currently, I'm pursuing a Diploma in ADSE (Aptech Pakistan) to further strengthen my software development skills.
           </p>
         </motion.div>
       </div>
