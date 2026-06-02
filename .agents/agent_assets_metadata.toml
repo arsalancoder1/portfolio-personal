@@ -1,0 +1,8 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "augw0OgD79YZ29ZDBvfzT"
+uri = "file://artifacts/portfolio/src/assets/portrait.png"
+type = "image"
+title = "Professional front-end developer portrait"
