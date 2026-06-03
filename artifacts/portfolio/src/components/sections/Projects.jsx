@@ -11,11 +11,11 @@ export default function Projects() {
       github: "https://github.com/arsalancoder1/IEC-WEBSITE"
     },
     {
-      title: "E-Commerce Website",
-      description: "Full-featured online store with cart & checkout functionality, product filtering, and payment integration.",
-      tags: ["React", "Node.js", "MongoDB"],
-      link: "#",
-      github: "#"
+      title: "Wasayal Website Clone",
+      description: "Redesigned and developed a responsive front-end clone of the Wasayal website using HTML, CSS, and Bootstrap, focusing on modern UI, layout accuracy, and cross-device compatibility.",
+      tags: ["HTML", "CSS", "Bootstrap"],
+      link: "https://wasayal-project.netlify.app/",
+      github: "https://github.com/arsalancoder1/wsayal-project"
     },
     {
       title: "Dashboard Application",
