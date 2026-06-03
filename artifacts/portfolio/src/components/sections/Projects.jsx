@@ -4,11 +4,11 @@ import { ExternalLink, Github } from "lucide-react";
 export default function Projects() {
   const projects = [
     {
-      title: "Portfolio Website",
-      description: "Personal portfolio built with React & Tailwind. Features smooth scroll, glassmorphism UI, and custom animations.",
-      tags: ["React", "Tailwind", "Framer Motion"],
-      link: "#",
-      github: "#"
+      title: "IEC-WEB CLONE",
+      description: "A clone of the IEC.org website built during my internship. Focused on replicating the layout, design, and core UI components using HTML and CSS.",
+      tags: ["HTML", "CSS", "Bootstrap"],
+      link: "https://iec-website.netlify.app/",
+      github: "https://github.com/arsalancoder1/IEC-WEBSITE.git"
     },
     {
       title: "E-Commerce Website",
