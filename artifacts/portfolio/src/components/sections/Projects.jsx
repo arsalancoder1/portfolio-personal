@@ -61,8 +61,8 @@ export default function Projects() {
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-2xl font-bold text-white group-hover:text-primary transition-colors">{project.title}</h3>
                 <div className="flex gap-3 text-white/50">
-                  <a href={project.github} className="hover:text-primary transition-colors"><Github size={20} /></a>
-                  <a href={project.link} className="hover:text-primary transition-colors"><ExternalLink size={20} /></a>
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors"><Github size={20} /></a>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors"><ExternalLink size={20} /></a>
                 </div>
               </div>
 
