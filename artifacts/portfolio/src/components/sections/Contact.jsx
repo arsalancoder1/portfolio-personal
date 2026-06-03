@@ -76,14 +76,32 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="mt-12 pt-8 border-t border-white/10">
-              <p className="text-sm text-white/50 mb-4 uppercase tracking-wider">Follow Me</p>
-              <div className="flex gap-4">
-                {[Linkedin, Github].map((Icon, i) => (
-                  <a key={i} href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/70 hover:text-primary hover:bg-primary/10 hover:neon-glow transition-all">
-                    <Icon size={18} />
-                  </a>
-                ))}
+            <div className="mt-12 pt-8 border-t border-white/10 flex flex-col items-center text-center">
+              <p className="text-sm text-white/50 mb-6 uppercase tracking-[0.2em]">Follow Me</p>
+              <div className="flex gap-5">
+                <a
+                  href="https://linkedin.com/in/arsalanzubairi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-white/70 hover:text-white hover:bg-primary/15 hover:border-primary/50 transition-all duration-300 group"
+                  style={{ boxShadow: "0 0 0 0 rgba(168,85,247,0)" }}
+                  onMouseEnter={e => e.currentTarget.style.boxShadow = "0 0 20px rgba(168,85,247,0.3)"}
+                  onMouseLeave={e => e.currentTarget.style.boxShadow = "0 0 0 0 rgba(168,85,247,0)"}
+                >
+                  <Linkedin size={26} className="group-hover:text-primary transition-colors" />
+                  <span className="text-sm font-medium tracking-wide">LinkedIn</span>
+                </a>
+                <a
+                  href="https://github.com/arsalancoder1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-white/70 hover:text-white hover:bg-primary/15 hover:border-primary/50 transition-all duration-300 group"
+                  onMouseEnter={e => e.currentTarget.style.boxShadow = "0 0 20px rgba(168,85,247,0.3)"}
+                  onMouseLeave={e => e.currentTarget.style.boxShadow = "0 0 0 0 rgba(168,85,247,0)"}
+                >
+                  <Github size={26} className="group-hover:text-primary transition-colors" />
+                  <span className="text-sm font-medium tracking-wide">GitHub</span>
+                </a>
               </div>
             </div>
           </motion.div>
