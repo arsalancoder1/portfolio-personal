@@ -14,8 +14,8 @@ export default function Hero() {
           className="flex flex-col text-center md:text-left order-2 md:order-1"
         >
           <span
-            className="font-light tracking-[0.3em] text-xs mb-5 uppercase"
-            style={{ color: "rgba(168,85,247,0.8)", fontFamily: "'Space Grotesk', sans-serif", letterSpacing: "0.35em" }}
+            className="font-light tracking-[0.3em] text-xs mb-5 uppercase self-start pl-1"
+            style={{ color: "rgba(168,85,247,0.8)", fontFamily: "Varela, sans-serif", letterSpacing: "0.35em" }}
           >
             Hello, I'm.
           </span>
