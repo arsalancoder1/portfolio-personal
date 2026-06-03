@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 
@@ -66,11 +65,11 @@ export default function Projects() {
                   <a href={project.link} className="hover:text-primary transition-colors"><ExternalLink size={20} /></a>
                 </div>
               </div>
-              
+
               <p className="text-white/70 font-light leading-relaxed mb-8 flex-grow">
                 {project.description}
               </p>
-              
+
               <div className="flex flex-wrap gap-2 mt-auto">
                 {project.tags.map(tag => (
                   <span key={tag} className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary border border-primary/20 rounded-full">

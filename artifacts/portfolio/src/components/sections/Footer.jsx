@@ -1,9 +1,8 @@
-import React from "react";
 import { ArrowUp } from "lucide-react";
 
 export default function Footer() {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -12,8 +11,8 @@ export default function Footer() {
         <p className="text-white/50 text-sm font-light">
           © 2024 Arsalan Zubairi. All rights reserved.
         </p>
-        
-        <button 
+
+        <button
           onClick={scrollToTop}
           className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/70 hover:text-primary hover:bg-primary/10 transition-all group"
           aria-label="Back to top"

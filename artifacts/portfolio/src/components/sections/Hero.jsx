@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import portraitImg from "@/assets/portrait.png";
 
@@ -7,7 +6,7 @@ export default function Hero() {
     <section id="hero" className="h-screen relative flex items-center justify-center pt-20 overflow-hidden">
       <div className="max-w-7xl mx-auto w-full px-6 grid grid-cols-1 md:grid-cols-3 gap-8 items-center relative z-10">
         {/* Left Text */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -22,7 +21,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Center Portrait */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
@@ -30,16 +29,16 @@ export default function Hero() {
         >
           <div className="absolute inset-0 bg-primary/40 rounded-full blur-[80px] -z-10 mix-blend-screen w-[80%] h-[80%] m-auto neon-glow"></div>
           <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden border border-white/10 glass-card p-2">
-            <img 
-              src={portraitImg} 
-              alt="Arsalan Zubairi" 
+            <img
+              src={portraitImg}
+              alt="Arsalan Zubairi"
               className="w-full h-full object-cover rounded-full"
             />
           </div>
         </motion.div>
 
         {/* Right Text */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}

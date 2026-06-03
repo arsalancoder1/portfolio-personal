@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Github } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -45,7 +45,7 @@ export default function Navigation() {
           ))}
 
           <a
-            href="https://github.com"
+            href="https://github.com/arsalancoder1"
             target="_blank"
             rel="noopener noreferrer"
             data-testid="link-github"

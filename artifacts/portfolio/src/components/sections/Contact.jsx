@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -13,16 +12,13 @@ const formSchema = z.object({
   message: z.string().min(10, "Message must be at least 10 characters"),
 });
 
-type FormValues = z.infer<typeof formSchema>;
-
 export default function Contact() {
   const { toast } = useToast();
-  const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm<FormValues>({
+  const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm({
     resolver: zodResolver(formSchema)
   });
 
-  const onSubmit = async (data: FormValues) => {
-    // Simulate API call
+  const onSubmit = async (data) => {
     await new Promise(resolve => setTimeout(resolve, 1000));
     toast({
       title: "Message sent!",
@@ -56,7 +52,7 @@ export default function Contact() {
           >
             <div>
               <h3 className="text-2xl font-bold text-white mb-8">Let's talk about everything!</h3>
-              
+
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
@@ -67,7 +63,7 @@ export default function Contact() {
                     <p className="text-white font-medium">arsalan.zubairi@email.com</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                     <Phone size={20} />
@@ -77,7 +73,6 @@ export default function Contact() {
                     <p className="text-white font-medium">+1 (555) 123-4567</p>
                   </div>
                 </div>
-                
               </div>
             </div>
 
