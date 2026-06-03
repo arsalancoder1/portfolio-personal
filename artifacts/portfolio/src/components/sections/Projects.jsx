@@ -8,7 +8,7 @@ export default function Projects() {
       description: "A clone of the IEC.org website built during my internship. Focused on replicating the layout, design, and core UI components using HTML and CSS.",
       tags: ["HTML", "CSS", "Bootstrap"],
       link: "https://iec-website.netlify.app/",
-      github: "https://github.com/arsalancoder1/IEC-WEBSITE.git"
+      github: "https://github.com/arsalancoder1/IEC-WEBSITE"
     },
     {
       title: "E-Commerce Website",
