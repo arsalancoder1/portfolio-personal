@@ -80,7 +80,7 @@ export default function Contact() {
               <p className="text-sm text-white/50 mb-6 uppercase tracking-[0.2em]">Follow Me</p>
               <div className="flex gap-5">
                 <a
-                  href="https://linkedin.com/in/arsalanzubairi"
+                  href="https://www.linkedin.com/in/arsalanzubairi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-white/70 hover:text-white hover:bg-primary/15 hover:border-primary/50 transition-all duration-300 group"
