@@ -21,7 +21,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="glass-card p-8 md:p-12 max-w-3xl"
+          className="glass-card p-8 md:p-12 max-w-3xl mx-auto text-center"
         >
           <p className="text-lg text-white/80 leading-relaxed font-light">
             I'm Arsalan Zubairi, a passionate Front-End Developer skilled in HTML, CSS, JavaScript. I enjoy crafting visually appealing and functional websites that provide seamless user experiences. Currently, I'm pursuing a Diploma in ADSE (Aptech Pakistan) to further strengthen my software development skills.
