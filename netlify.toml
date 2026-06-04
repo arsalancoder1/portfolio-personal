@@ -1,6 +1,5 @@
 [build]
-  base = ""
-  command = "npm install -g pnpm && pnpm install --no-frozen-lockfile && pnpm --filter @workspace/portfolio run build"
+  command = "corepack enable pnpm && pnpm install --no-frozen-lockfile && pnpm --filter @workspace/portfolio run build"
   publish = "artifacts/portfolio/dist/public"
 
 [build.environment]
